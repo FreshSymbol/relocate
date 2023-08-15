@@ -1,0 +1,495 @@
+/*Fonts*/
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik");
+  src: url("fonts/Rubik-Regular.woff2") format("woff2"),
+    url("fonts/Rubik-Regular.woff") format("woff");
+
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik");
+  src: url("./fonts/Rubik-Medium.woff2") format("woff2"),
+    url("fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url("./fonts/Roboto-Regular.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto");
+  src: url("fonts/Roboto-Bold.woff2") format("woff2"),
+    url("fonts/Roboto-Bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+/*Relocate*/
+body {
+  font-family: Rubic, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #222;
+
+  background-color: #fff;
+}
+
+a {
+  display: inline-block;
+}
+
+.page {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/*Header*/
+.header {
+  height: 120px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin: 50px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.nav__link {
+  margin-right: 30px;
+
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  color: #222;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.nav__link_red {
+  font-family: Roboto;
+  font-weight: 700;
+  color: #ff6965;
+}
+
+.nav__link:focus,
+.nav__link:hover {
+  text-decoration: underline 2px;
+}
+
+.nav__link:active {
+  box-shadow: 0 5px 5px #ccc;
+  text-decoration: none;
+  translate: 0 3px;
+}
+
+/*Main*/
+
+.title {
+  margin: 20px auto 10px;
+
+  font-family: Rubik, sans-serif;
+  font-size: 48px;
+  line-height: 64px;
+  color: #222;
+  font-weight: 500;
+}
+
+.text {
+  margin: 20px auto;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #868686;
+  font-weight: normal;
+}
+
+.container {
+  width: 1240px;
+  padding: 60px;
+  text-align: center;
+}
+
+/*Top*/
+.top {
+  height: 800px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: black url(./images/top/background.jpg) no-repeat center/cover;
+}
+
+.top__item {
+  width: 600px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top__text {
+  margin-bottom: 80px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
+  line-height: 55px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/*Form*/
+.form {
+  width: 456px;
+  margin: 0 auto;
+  padding: 35px;
+
+  background-color: #f5f5f5;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.form__title {
+  margin-bottom: 10px;
+
+  font-family: Rubik, sans-serif;
+  font-size: 32px;
+  line-height: 42px;
+  color: #222;
+  font-weight: 500;
+}
+
+.form__text {
+  margin-bottom: 30px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #868686;
+  font-weight: normal;
+}
+
+.form__input {
+  width: 390px;
+  height: 60px;
+  margin-bottom: 10px;
+  padding: 25px 20px;
+
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  line-height: 12px;
+  color: #868686;
+  font-weight: normal;
+
+  background-color: #f5f5f5;
+  border: 2px solid #868686;
+  border-radius: 8px;
+}
+
+.form__input:focus {
+  color: #222;
+  background-color: #fff;
+  border: 2.5px solid #455b71;
+}
+
+.btn {
+  width: 310px;
+  height: 60px;
+  margin: 10px auto;
+  padding: 20px;
+
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: #fff;
+
+  background-color: #ff6965;
+  text-transform: uppercase;
+  border: 2px solid #fd5b55;
+  border-radius: 8px;
+  transition: all 0.1s linear;
+}
+
+.btn-submit {
+  width: 388px;
+  height: 73px;
+  color: #fff;
+
+  background-color: #ff6965;
+}
+
+.btn:focus,
+.btn:hover {
+  box-shadow: 0 1px 10px #ff6965;
+}
+.btn:active,
+.btn-submit:active {
+  background-color: #fd5b55;
+}
+
+/*Moving*/
+.card {
+  margin: 40px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__item {
+  padding: 25px;
+  flex: 0 0 48%;
+
+  text-align: left;
+  border: 1px solid #7c7c7c;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+}
+
+.item {
+  height: 284px;
+  margin: 15px 5px;
+}
+
+.card__item:focus,
+.card__item:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 5px 15px #868686;
+}
+
+.card__title {
+  margin: 10px auto;
+
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  color: #222;
+}
+
+.card__text {
+  font-family: Roboto, sans-serif;
+  font-style: 14px;
+  line-height: 24px;
+  color: #868686;
+}
+.btn-white {
+  color: #ff6965;
+  background-color: #fff;
+}
+
+.btn-white:active {
+  color: #fff;
+  background-color: #ff6965;
+}
+
+/*About*/
+.about-life {
+  background-color: #f5f5f5;
+}
+
+.video {
+  width: 900px;
+  height: 530px;
+  margin: 40px auto;
+}
+
+.item-sm {
+  height: 215px;
+  margin: 10px 5px;
+}
+
+.block-item {
+  flex: 0 0 64%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Help*/
+.img-help {
+  display: inline;
+  flex: 0 0 34%;
+}
+
+/*Help*/
+.service {
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.service__block-image {
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Team*/
+.team__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team__item {
+  margin: 40px 60px;
+}
+
+.img-team {
+  border-radius: 50%;
+  margin: 20px auto;
+}
+
+/*Join*/
+.join {
+  background-color: #f5f5f5;
+}
+
+/*Footer*/
+.footer {
+  height: 210px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
